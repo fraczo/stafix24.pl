@@ -1,0 +1,78 @@
+﻿<!-- Sliding share panel. Click "Share it" to see. -->
+
+<div class="sharepanel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="padd spara">
+                    <!-- Small para -->
+                    <p>Nulla facilisi. Sed justo dui, scelerisque ut consectetur vel. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="padd">
+                    <div class="social">
+                        <!-- Social media icons. Repalce # with your profile links -->
+                        <a href="#">
+                            <img src="/content/template/img/facebook.png" alt="" width="40" /></a>
+                        <a href="#">
+                            <img src="/content/template/img/twitter.png" alt="" width="40" /></a>
+                        <a href="#">
+                            <img src="/content/template/img/linkedin.png" alt="" width="40" /></a>
+                        <a href="#">
+                            <img src="/content/template/img/googleplus.png" alt="" width="40" /></a>
+                        <a href="#">
+                            <img src="/content/template/img/rss.png" alt="" width="40" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- Header -->
+
+<div class="fixedbar">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo">
+                    <div class="pull-left">
+                        <!-- Logo with font awesome icon (icon-camera-retro). Replace it with your logo. Replace # with your site link -->
+                        <h1><i class='icon-camera-retro'></i>@Html.ActionLink("STAFix24", "Index", "Home")</h1>
+                    </div>
+                    <div class="navi">
+                        <!-- Navigation Starts Here -->
+                        <div class="pull-left">
+                            <div id="ddtopmenubar" class="mattblackmenu">
+                                <!-- Main navigation -->
+                                <ul>
+                                    <li>@Html.ActionLink("Strona domowa", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("Informacje o produkcie", "", "", null, new { @rel = "ddsubmenu0" })</li>
+                                    <ul id="ddsubmenu0" class="ddsubmenustyle">
+                                        <li><a href="index-slider.html">With Slider</a></li>
+                                        <li><a href="full-width.html">Full Width</a></li>
+                                    </ul>
+                                    <li>@Html.ActionLink("Usługi powiązane", "Index", "")</li>
+                                    <li>@Html.ActionLink("O nas", "About", "Home")</li>
+                                    <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Navigation Ends Here -->
+                    </div>
+                </div>
+                <div class="share">
+                    <div class="pull-right">
+                        <!-- Share it link for slider -->
+                        <p><a href="#" class="open"><span class="hidden-xs">Share it <i class="icon-share"></i></span></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

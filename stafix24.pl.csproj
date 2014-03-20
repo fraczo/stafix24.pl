@@ -428,6 +428,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Index.SideBarPartial.cshtml" />
+    <Content Include="Views\Shared\_Index.MainPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.FooterPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.3ColFooterPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.HeaderPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
