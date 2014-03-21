@@ -365,6 +365,8 @@
     <Content Include="Content\Template\font\fontawesome-webfont.ttf" />
     <Content Include="Content\Template\font\fontawesome-webfont.woff" />
     <Content Include="Content\Template\font\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\stafix24 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\stafix24 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\custom.js" />
@@ -433,6 +435,8 @@
     <Content Include="Views\Shared\_Layout.FooterPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.3ColFooterPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\_CompanyAddressPartial.cshtml" />
+    <Content Include="Views\Shared\_CompanyContactPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
