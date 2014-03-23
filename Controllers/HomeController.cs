@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using stafix24.pl.Models;
+using stafix24.pl.Services;
 
 namespace stafix24.pl.Controllers
 {
@@ -26,6 +28,29 @@ namespace stafix24.pl.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Contact(ContactModel model)
+        {
+            var msg = String.Format("Informacja z witryny STAFix24.pl od: {1}{0}Email:{2}{0}Komentarz:{3}{0}",
+                Environment.NewLine,
+                model.name,
+                model.email,
+                model.comment);
+
+            var svc = new MailService();
+            if (svc.SendMail("noreply@stafix24.pl", "jacek.rawiak@hotmail.com","::Inormacja z witryny Stafix24.pl::", msg))
+            {
+                 ViewBag.MailSent = true;
+            }
+
+            return View(); 
+        }
+
+        public ActionResult ProductDetails()
+        {
             return View();
         }
     }

@@ -188,7 +188,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IMailService.cs" />
+    <Compile Include="Services\MailService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Template\font\fontawesome-webfont.svg" />
@@ -437,6 +440,7 @@
     <Content Include="Views\Shared\_Layout.HeaderPartial.cshtml" />
     <Content Include="Views\Shared\_CompanyAddressPartial.cshtml" />
     <Content Include="Views\Shared\_CompanyContactPartial.cshtml" />
+    <Content Include="Views\Home\ProductDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
